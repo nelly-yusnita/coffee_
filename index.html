@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- ===== FAVICON ===== -->
+	<link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+	<!-- ===== BOXICONS ===== -->
+	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+	<!-- ===== SWIPER CSS ===== -->
+	<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+	<!-- ===== FANCYBOX 3 ===== -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+	<!-- ===== MAIN CSS ===== -->
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<title>Coffee.</title>
+</head>
+<body>
+	<!-- ===== HEADER ===== -->
+	<header class="header" id="header">
+		<nav class="nav container">
+			<a href="#" class="nav__logo">
+				<img src="assets/img/logo.png" alt="logo image" class="nav__logo-img">
+				Coffee.
+			</a>
+
+			<div class="nav__menu" id="nav-menu">
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a href="#home" class="nav__link active-link">Home</a>
+					</li>
+					<li class="nav__item">
+						<a href="#products" class="nav__link">Products</a>
+					</li>
+					<li class="nav__item">
+						<a href="#premium" class="nav__link">Premium</a>
+					</li>
+					<li class="nav__item">
+						<a href="#findus" class="nav__link">Find Us</a>
+					</li>
+				</ul>
+
+				<div class="nav__close" id="nav-close">
+					<i class='bx bx-x'></i>
+				</div>
+			</div>
+
+			<!-- Nav buttons -->
+			<div class="nav__buttons">
+				<i class='bx bx-moon change-theme' id="theme-button"></i>
+
+				<div class="nav__toggle" id="nav-toggle">
+					<i class='bx bx-menu-alt-right'></i>
+			 	</div>
+			</div>
+		</nav>
+	</header>
+	<!-- ===== end header ===== -->
+
+	<!-- ===== MAIN ===== -->
+	<main class="main">
+		<!-- ===== HOME ===== -->
+		<section class="home grid" id="home">
+			<div class="home__container">
+				<div class="home__content container">
+					<h1 class="home__title">
+						Quality Coffee<br>
+						<span class="home__italic">delivered</span> to your door<span class="home__orange">.</span>
+					</h1>
+
+					<p class="home__description">
+						Coffee is our craft, our ritual, our passion and we want to share it with you.
+					</p>
+
+					<div class="home__data">
+						<div class="home__data-group">
+							<h2 class="home__data-number">120K</h2>
+							<h3 class="home__data-title">Testimonials</h3>
+							<p class="home__data-description">Testimonials from various customers who trust us.</p>
+						</div>
+
+						<div class="home__data-group">
+							<h2 class="home__data-number">340+</h2>
+							<h3 class="home__data-title">Exclusive Product</h3>
+							<p class="home__data-description">Premium preparation with quality ingredients.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="home__video">
+				<video src="assets/video/coffee.mp4" muted autoplay loop type="mp4"></video>
+			</div>
+		</section>
+		<!-- ===== end home ===== -->
+
+		<!-- ===== FITUR ===== -->
+		<section class="fitur section">
+			<div class="fitur__container container grid">
+				<div class="fitur__card fitur__line">
+					<i class='bx bx-package fitur__icon'></i>
+					<div class="fitur__data">
+						<h3 class="fitur__title">We deliver to your home</h3>
+						<span class="fitur__description">Order on-demand or schedule delivery up to a week in advance.</span>
+					</div>
+				</div>
+
+				<div class="fitur__card fitur__line">
+					<i class='bx bx-heart fitur__icon'></i>
+					<div class="fitur__data">
+						<h3 class="fitur__title">Follow on social media</h3>
+						<span class="fitur__description">or subscribe to our newsletter to stay updated.</span>
+					</div>
+				</div>
+
+				<div class="fitur__card fitur__line">
+					<i class='bx bx-leaf fitur__icon'></i>
+					<div class="fitur__data">
+						<h3 class="fitur__title">From Seed to Cup</h3>
+						<span class="fitur__description">An exceptional coffee experience starts with only the best ingredients.</span>
+					</div>
+				</div>
+
+				<div class="fitur__card">
+					<i class='bx bx-envelope fitur__icon'></i>
+					<div class="fitur__data">
+						<h3 class="fitur__title">We’d love to hear from you!</h3>
+						<span class="fitur__description">Whether it’s feedback or if you’ want to join our lovely team.</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ===== end fitur ===== -->
+
+		<!-- ===== PRODUCTS ===== -->
+		<section class="products section container" id="products">
+			<h2 class="section__title">Choose our <span class="section__title-italic">best products</span></h2>
+
+			<div class="products__container swiper">
+				<div class="products__wrapper swiper-wrapper">
+					<!-- 1 -->
+					<div class="product__card swiper-slide">
+						<div class="product__content">
+							<div class="product__shape">
+								<img src="assets/img/arabica.png" alt="" class="product__img">
+							</div>
+
+							<div class="product__data">
+								<h2 class="product__name">Arabica</h2>
+								<div class="product__description">
+									<span>Creamy</span>
+									<div class="product__circle"></div>
+									<span>Organic</span>
+									<div class="product__circle"></div>
+									<span>Strong</span>
+								</div>
+								
+								<span class="product__price">$4.15</span>
+
+								<button class="product__button">
+									<i class="bx bx-shopping-bag product__button-icon"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- 2 -->
+					<div class="product__card swiper-slide">
+						<div class="product__content">
+							<div class="product__shape">
+								<img src="assets/img/indonesia.png" alt="" class="product__img">
+							</div>
+
+							<div class="product__data">
+								<h2 class="product__name">Indonesia</h2>
+								<div class="product__description">
+									<span>Darker</span>
+									<div class="product__circle"></div>
+									<span>Organic</span>
+									<div class="product__circle"></div>
+									<span>Strong</span>
+								</div>
+								
+								<span class="product__price">$35.15</span>
+
+								<button class="product__button">
+									<i class="bx bx-shopping-bag product__button-icon"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- 3 -->
+					<div class="product__card swiper-slide">
+						<div class="product__content">
+							<div class="product__shape">
+								<img src="assets/img/brazil.png" alt="" class="product__img">
+							</div>
+
+							<div class="product__data">
+								<h2 class="product__name">Brazil</h2>
+								<div class="product__description">
+									<span>Creamy</span>
+									<div class="product__circle"></div>
+									<span>Organic</span>
+									<div class="product__circle"></div>
+									<span>Strong</span>
+								</div>
+								
+								<span class="product__price">$30.75</span>
+
+								<button class="product__button">
+									<i class="bx bx-shopping-bag product__button-icon"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- 4 -->
+					<div class="product__card swiper-slide">
+						<div class="product__content">
+							<div class="product__shape">
+								<img src="assets/img/whiteblend.png" alt="" class="product__img">
+							</div>
+
+							<div class="product__data">
+								<h2 class="product__name">White Blend</h2>
+								<div class="product__description">
+									<span>Darker</span>
+									<div class="product__circle"></div>
+									<span>Organic</span>
+									<div class="product__circle"></div>
+									<span>Strong</span>
+								</div>
+								
+								<span class="product__price">$21.15</span>
+
+								<button class="product__button">
+									<i class="bx bx-shopping-bag product__button-icon"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- 5 -->
+					<div class="product__card swiper-slide">
+						<div class="product__content">
+							<div class="product__shape">
+								<img src="assets/img/liberica.png" alt="" class="product__img">
+							</div>
+
+							<div class="product__data">
+								<h2 class="product__name">Liberica</h2>
+								<div class="product__description">
+									<span>Creamy</span>
+									<div class="product__circle"></div>
+									<span>Darker</span>
+									<div class="product__circle"></div>
+									<span>Strong</span>
+								</div>
+								
+								<span class="product__price">$5.10</span>
+
+								<button class="product__button">
+									<i class="bx bx-shopping-bag product__button-icon"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- 6 -->
+					<div class="product__card swiper-slide">
+						<div class="product__content">
+							<div class="product__shape">
+								<img src="assets/img/ethiopia.png" alt="" class="product__img">
+							</div>
+
+							<div class="product__data">
+								<h2 class="product__name">Ethiopia</h2>
+								<div class="product__description">
+									<span>Creamy</span>
+									<div class="product__circle"></div>
+									<span>Darker</span>
+									<div class="product__circle"></div>
+									<span>Strong</span>
+								</div>
+								
+								<span class="product__price">$4.75</span>
+
+								<button class="product__button">
+									<i class="bx bx-shopping-bag product__button-icon"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- 7 -->
+					<div class="product__card swiper-slide">
+						<div class="product__content">
+							<div class="product__shape">
+								<img src="assets/img/guatemala.png" alt="" class="product__img">
+							</div>
+
+							<div class="product__data">
+								<h2 class="product__name">Guatemala</h2>
+								<div class="product__description">
+									<span>Creamy</span>
+									<div class="product__circle"></div>
+									<span>Darker</span>
+									<div class="product__circle"></div>
+									<span>Organic</span>
+								</div>
+								
+								<span class="product__price">$3.25</span>
+
+								<button class="product__button">
+									<i class="bx bx-shopping-bag product__button-icon"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- 8 -->
+					<div class="product__card swiper-slide">
+						<div class="product__content">
+							<div class="product__shape">
+								<img src="assets/img/robusta.png" alt="" class="product__img">
+							</div>
+
+							<div class="product__data">
+								<h2 class="product__name">Robusta</h2>
+								<div class="product__description">
+									<span>Creamy</span>
+									<div class="product__circle"></div>
+									<span>Darker</span>
+									<div class="product__circle"></div>
+									<span>Strong</span>
+								</div>
+								
+								<span class="product__price">$15.75</span>
+
+								<button class="product__button">
+									<i class="bx bx-shopping-bag product__button-icon"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Navigation -->
+				<div class="swiper-button-next">
+					<i class='bx bx-chevron-right'></i>
+				</div>
+				<div class="swiper-button-prev">
+					<i class='bx bx-chevron-left'></i>
+				</div>
+
+				<!-- Pagination -->
+				<div class="swiper-pagination"></div>
+			</div>   
+		</section>
+		<!-- ===== end products ===== -->
+
+		<!-- ===== QUALITY ===== -->
+		<section class="quality section" id="premium">
+			<div class="quality__container container">
+				<h2 class="section__title">We offer a premium and better quality preparation <span class="section__title-italic">just for you!</span></h2>
+
+				<div class="quality__content grid">
+					<div class="quality__images">
+						<img src="assets/img/quality1.jpg" alt="" class="quality__img-big">
+						<img src="assets/img/quality2.jpg" alt="" class="quality__img-small">
+					</div>
+
+					<div class="quality__data">
+						<h1 class="quality__title">Premium Coffee Blends for Everyone</h1>
+						<p class="quality__description">We are delighted with our coffee. That's why you get the best premium coffee plus the kettle made of resistant materials that you see in the image, for a special price.</p>
+
+						<div class="quality__buttons">
+							<a href="#" class="button button__black quality__button">Buy Now</a>
+
+							<a href="#" class="button button__white button__flex quality__button">
+								See more
+								<i class="bx bx-right-arrow-alt button__icon"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ===== end quality ===== -->
+
+		<!-- ===== SPONSOR ===== -->
+		<section class="sponsor">
+			<div class="sponsor__container container grid">
+				<img src="assets/img/sponsor1.png" alt="sponsor image" class="sponsor__img">
+				<img src="assets/img/sponsor2.png" alt="sponsor image" class="sponsor__img">
+				<img src="assets/img/sponsor3.png" alt="sponsor image" class="sponsor__img">
+				<img src="assets/img/sponsor4.png" alt="sponsor image" class="sponsor__img">
+				<img src="assets/img/sponsor5.png" alt="sponsor image" class="sponsor__img">
+			</div>
+		</section>
+		<!-- ===== end sponsor ===== -->
+
+		<!-- ===== FIND US ===== -->
+		<section class="find section container" id="findus">
+			<h2 class="section__title">Find us</h2>
+
+			<div class="find__container grid">
+				<img src="assets/img/place.jpg" alt="" class="find__img">
+				
+				<div class="find__data grid">
+					<div class="fine__data-content">
+						<h3 class="find__title">WHERE</h3>
+						<span class="find__address">317 Pacific C Hwy<br>Huntington Beach, CA 92648</span>
+
+						<div class="find__buttons">
+							<a href="#" class="button button__black find__button">View Map</a>
+							<a href="" class="button button__white button__flex find__button">
+								Book a Table
+								<i class="bx bx-right-arrow-alt button__icon"></i>
+							</a>
+						</div>
+					</div>
+
+					<div class="find__data-content">
+						<h3 class="find__title">WHEN</h3>
+						<span class="find__time find__time-1">Monday – Friday<br>7am – 6pm</span>
+						<span class="find__time">Saturday/Sunday<br>8am – 6pm</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ===== end find us ===== -->
+
+		<!-- ===== GALLERY ===== -->
+		<section class="gallery">
+			<div class="gallery__container swiper">
+				<div class="swiper-wrapper">
+					<div class="grid__item swiper-slide">
+						<a data-fancybox="gallery" href="assets/img/gallery1.jpg"><img src="assets/img/gallery1.jpg"></a>
+					</div>
+					<div class="grid__item swiper-slide">
+						<a data-fancybox="gallery" href="assets/img/gallery2.jpg"><img src="assets/img/gallery2.jpg"></a>
+					</div>
+					<div class="grid__item swiper-slide">
+						<a data-fancybox="gallery" href="assets/img/gallery3.jpg"><img src="assets/img/gallery3.jpg"></a>
+					</div>
+					<div class="grid__item swiper-slide">
+						<a data-fancybox="gallery" href="assets/img/gallery4.jpg"><img src="assets/img/gallery4.jpg"></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ===== end gallery ===== -->
+
+		<!-- ===== BLOG ===== -->
+		<section class="blog section">
+			<div class="blog__container container">
+				<h2 class="section__title">
+					Our Blogs Coffee with trending topic for this week
+				</h2>
+
+				<div class="blog__content grid">
+					<article class="blog__card">
+						<div class="blog__image">
+							<img src="assets/img/blog1.jpg" alt="" class="blog__img">
+							<a href="#" class="blog__button">
+								<i class="bx bx-right-arrow-alt"></i>
+							</a>
+						</div>
+
+						<div class="blog__data">
+							<h2 class="blog__title">10 Coffee Recommendations</h2>
+							<p class="blog__description">The blogs about coffee will help you a lot about how it is prepared, its waiting time, for a good quality coffee.</p>
+							<div class="blog__footer">
+								<div class="blog__reaction">
+									<i class="bx bx-comment"></i>
+									<span>12</span>
+								</div>
+								<div class="blog__reaction">
+									<i class="bx bx-show"></i>
+									<span>76,5K</span>
+								</div>
+							</div>
+						</div>
+					</article>
+
+					<article class="blog__card">
+						<div class="blog__image">
+							<img src="assets/img/blog2.jpg" alt="" class="blog__img">
+							<a href="#" class="blog__button">
+								<i class="bx bx-right-arrow-alt"></i>
+							</a>
+						</div>
+
+						<div class="blog__data">
+							<h2 class="blog__title">12 Benefits Of Drinking Coffee</h2>
+							<p class="blog__description">The blogs about coffee will help you a lot about how it is prepared, its waiting time, for a good quality coffee.</p>
+							<div class="blog__footer">
+								<div class="blog__reaction">
+									<i class="bx bx-comment"></i>
+									<span>45</span>
+								</div>
+								<div class="blog__reaction">
+									<i class="bx bx-show"></i>
+									<span>356,5K</span>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+		<!-- ===== end blog ===== -->
+	</main>
+	<!-- ===== end main ===== -->
+
+	<!-- ===== FOOTER ==== -->
+	<footer class="footer section">
+		<div class="footer__container container grid">
+			<div class="footer__content">
+				<a href="#" class="footer__logo">
+					<img src="assets/img/logo.png" alt="logo image">
+					<span>Coffee.</span>
+				</a>
+
+				<h3 class="footer__title">Subscribe to our newsletter<br>to stay update</h3>
+
+				<div class="footer__newsletter">
+					<input type="email" placeholder="Your email address" class="footer__input">
+					<button class="footer__button">
+						<i class="bx bx-right-arrow-alt"></i>
+					</button>
+				</div>
+			</div>
+
+			<div class="footer__content">
+				<h3 class="footer__title">Our Address</h3>
+				<p class="footer__information">Jl. Jendral Sudirman<br>Jakarta Selatan, <br>12345</p>
+			</div>
+
+			<div class="footer__content">
+				<h3 class="footer__title">Contact</h3>
+				<p class="footer__information">+123456789 <br> coffee@email.com</p>
+			</div>
+
+			<div class="footer__content">
+				<h3 class="footer__title">Follow Us</h3>
+				<ul class="footer__social">
+					<a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+						<i class="bx bxl-facebook"></i>
+					</a>
+					<a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+						<i class="bx bxl-instagram"></i>
+					</a>
+					<a href="https://twitter.com/" target="_blank" class="footer__social-link">
+						<i class="bx bxl-twitter"></i>
+					</a>
+				</ul>
+			</div>
+		</div>
+
+		<p class="footer__copy container">&#169;2022 - By <a href="https://nelly-yusnita.github.io/portfolio/" class="footer__portfolio-link" target="_blank">Nelly Yusnita</a></p>
+
+		<span class="footer__note container">This website is demo for testing purpose, no orders shall be fulfilled.</span>
+	</footer>
+	<!-- ===== end footer ===== -->
+
+	<!-- ===== SCROLL UP ===== -->
+	<a href="#" class="scrollup" id="scroll-up">
+		<i class="bx bx-up-arrow-alt"></i>
+	</a>
+	<!-- ===== end scroll up ===== -->
+
+	<!-- ===== SWIPER JS ===== -->
+	<script src="assets/js/swiper-bundle.min.js"></script>
+
+	<!-- ====== FANCYBOX 3 ===== -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+	<!-- ===== SCROLLREVEAL ===== -->
+	<script src="assets/js/scrollreveal.min.js"></script>
+
+	<!-- ===== MAIN JS ===== -->
+	<script src="assets/js/script.js"></script>
+</body>
+</html>
